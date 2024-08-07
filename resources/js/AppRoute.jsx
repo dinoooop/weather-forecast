@@ -1,14 +1,11 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import HomeScreen from "./Pages/HomeScreen";
+import HomePage from "./Pages/HomePage";
 
 function AppRoute() {
   return (
     <Router>
       <Routes>
-
-        <Route path='/' element={<HomeScreen />} />
-        <Route path='/test' element={<HomeScreen />} />
-
+        <Route path='/' element={<HomePage />} />
       </Routes>
     </Router>
   );
