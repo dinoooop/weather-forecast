@@ -1,20 +1,17 @@
 # Weather Forecast
-Weather Forecast is an application that allow you to find the weather report of your city.
+Weather Forecast is an application that allow you to find the weather report of given city.
 
 ## Installation
 PHP 8.1 and Laravel 10 or higher are required.
 
-First of clone this project
+First of all, clone the project and copy the configurations from example env file
 ```sh
 git clone https://github.com/dinoooop/weather-forecast.git
-```
-
-Copy the configuration file from example
-```sh
+cd weather-forecast
 cp .env.example .env
 ```
 
-To configure your Laravel application and connect to the database, update the following settings in `.env` file.
+To configure the application and connect to the database, update the following settings in `.env` file.
 ```dotenv
 APP_URL=http://localhost:8000
 
@@ -29,27 +26,27 @@ WF_API_URL=https://api.openweathermap.org/data/2.5/weather
 WF_API_KEY=
 ```
 
+
+### Note
+When using SQLite, you need to provide the full path to the database file (DB_DATABASE).
+
 To install all dependencies, run the following command
 ```sh
 composer install
 ```
 
-Run the following command to create all required table for the application 
+Run the following command to create all required table for the application.
 ```sh
 php artisan migrate
 ```
 
-The application front end is in React JS run the following command to install all its dependies
+The application frontend is in React JS, run the following command to install all the dependencies and create the build.
 ```sh
 npm install
-```
-
-Run the follwoing command to create a build
-```sh
 npm run build
 ```
 
-Finallly, Run the following command to starts a local development server for your Laravel application
+Run the following command to starts a local development server for the application.
 ```sh
 php artisan serve
 ```
