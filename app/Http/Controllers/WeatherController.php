@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Services\WeatherService;
-use Illuminate\Support\Facades\Log;
 
 class WeatherController extends Controller
 {
@@ -18,7 +17,6 @@ class WeatherController extends Controller
     public function fetchAndStoreWeather(Request $request)
     {
         $city = $request->input('city');
-        Log::info($city);
         $data = $this->weatherService->fetchWeatherData($city);
 
         if ($data) {

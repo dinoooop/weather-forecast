@@ -4,7 +4,6 @@ namespace App\Services;
 
 use Illuminate\Support\Facades\Http;
 use App\Models\WeatherForecast;
-use Illuminate\Support\Facades\Log;
 
 class WeatherService
 {

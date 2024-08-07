@@ -18,16 +18,13 @@ APP_URL=http://localhost:8000
 DB_CONNECTION=sqlite
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=E:\weather-forecast\WF.sqlite
+DB_DATABASE=WF.sqlite
 DB_USERNAME=root
 DB_PASSWORD=
 
 WF_API_URL=https://api.openweathermap.org/data/2.5/weather
 WF_API_KEY=
 ```
-
-**Note:** When using SQLite, you need to provide the full path to the database file (`DB_DATABASE`).
-
 
 To install all dependencies, run the following command
 ```sh
